@@ -9,8 +9,27 @@
     <h:body>
         <h1>Demo.....</h1>
         <h:outputText value="#{_app.name}"/>
-        ------------------------
         <p:outputLabel value="#{_app.name}"/>
+        <h:form>
+            ID:<p:inputText value="#{_app.id}"/>
+            <h:commandButton action="#{_app.dataRefresh_action()}" value="Refresh"/>
+        </h:form>
+        <p:dataTable var="row" value="#{_app.list}">
+            <p:column headerText="Id">
+                <h:outputText value="#{row.id}"/>
+            </p:column>
+            <p:column headerText="Name">
+                <h:outputText value="#{row.name}"/>
+            </p:column>
+        </p:dataTable>
+        <h:form>
+            <p:panel>
+                PARAM: <p:outputLabel value="#{_app.id}"/>
+                ID: <p:inputText value="#{_app.data.id}"/>
+                Name: <p:inputText value="#{_app.data.name}"/>
+                <p:commandButton value="Set"/>
+            </p:panel>
+        </h:form>
     </h:body>
 </html>
 
