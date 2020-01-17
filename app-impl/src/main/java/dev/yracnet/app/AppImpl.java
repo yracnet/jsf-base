@@ -5,6 +5,8 @@
  */
 package dev.yracnet.app;
 
+import dev.yracnet.app.AppLogic;
+import dev.yracnet.app.AppServ;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.inject.Inject;

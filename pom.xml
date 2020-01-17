@@ -9,5 +9,6 @@
         <module>app-faces</module>
         <module>app-logic</module>
         <module>app-serv</module>
+        <module>app-impl</module>
     </modules>
 </project>
