@@ -7,5 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>app-faces</module>
+        <module>app-logic</module>
+        <module>app-serv</module>
     </modules>
 </project>
